@@ -32,7 +32,11 @@ class DashboardScreen extends StatelessWidget {
 
                 child: SingleChildScrollView(
                   child: Column(
-                    children: [PaymentList(), PromoSection()],
+                    children: [
+                      PaymentList(),
+                      SizedBox(height: 20),
+                      PromoSection(),
+                    ],
                   ),
                 ),
               ),
@@ -57,14 +61,8 @@ class DashboardScreen extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      ActionItem(
-                        text: 'Top up',
-                        imageIconPath: EImages.wallet,
-                      ),
-                      ActionItem(
-                        text: 'Send',
-                        imageIconPath: EImages.send,
-                      ),
+                      ActionItem(text: 'Top up', imageIconPath: EImages.wallet),
+                      ActionItem(text: 'Send', imageIconPath: EImages.send),
                       ActionItem(
                         text: 'Request',
                         imageIconPath: EImages.income,

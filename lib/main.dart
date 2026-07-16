@@ -1,4 +1,4 @@
-import 'package:e_wallet_mobile_app/features/dashboard/dashboard_screen.dart';
+import 'package:e_wallet_mobile_app/core/widgets/button_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +13,7 @@ class WalletApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'E-Wallet',
-      home: Scaffold(
-        backgroundColor: Colors.red,
-        body: DashboardScreen(),
-      ),
+      home: ButtonNavBar(),
     );
   }
 }

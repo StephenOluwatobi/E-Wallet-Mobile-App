@@ -17,7 +17,7 @@ class ActionItem extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(15),
           decoration: BoxDecoration(
             color: Colors.deepPurple.withValues(alpha: 0.1),
             borderRadius: BorderRadius.circular(12),
@@ -28,10 +28,7 @@ class ActionItem extends StatelessWidget {
         const SizedBox(height: 8),
         Text(
           text!,
-          style: const TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 12,
-          ),
+          style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 10),
           textAlign: TextAlign.center,
         ),
       ],
